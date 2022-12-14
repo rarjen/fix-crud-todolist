@@ -1,15 +1,8 @@
 <?php
 
-$host = "localhost:3306";
+$host = "localhost:3308";
 $user = "root";
 $pass = "";
 $dbname = "mytodo";
 
 $conn = mysqli_connect($host, $user, $pass, $dbname);
-if(!$conn){
-    die("tidak bisa terkondisi");
-}
-else{
-    echo "koneksi berhasil";
-}
-?>

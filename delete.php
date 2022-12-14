@@ -1,8 +1,6 @@
 <?php
+$id = $_GET["id"];
 
-include  "config.php";
-echo $id = $_GET['ID'];
-mysqli_query($con, "DELETE FROM `mytodo` WHERE id = $id");
+require_once "config.php";
+mysqli_query($conn, "DELETE FROM `mytodo` WHERE id = $id");
 header("location: index.php");
-
-?>
